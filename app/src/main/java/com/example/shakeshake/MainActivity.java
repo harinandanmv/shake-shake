@@ -11,16 +11,16 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-import androidx.constraintlayout.widget.ConstraintLayout;  // <-- changed import
+import androidx.constraintlayout.widget.ConstraintLayout;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
     SensorManager sm;
     Sensor s;
-    ConstraintLayout rl;  // <-- changed type to ConstraintLayout
+    ConstraintLayout rl;
     private float lastx, lasty, lastz;
-    private int threshold = 500;
+    private int threshold = 1000;
     private long lasttime;
 
     @Override
